@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+/* advantages */
+.advantages {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.advantages-bg {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.advantages-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+}
+
+
+.container {
+    /* opacity: 1; */
+    max-width: 87.5%;
+}
+
+.advantages-list-block {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.advantages-list-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #020202;
+    font-style: normal;
+    font-weight: normal;
+    margin: 40px 0 40px 0;
+}
+
+.advantages-list-card {
+    margin-bottom: 24px;
+}
+
+.advantages-list-card img {
+    margin-bottom: 16px;
+}
+
+.advantages-list-card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.advantages-list-card-description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 300;
+}
+
+.advantages-picture {
+    background: url(../img/advantages-picture-bg.png);
+    background-size: cover;
+    max-width: 280px;
+    height: 355px;
+    border: 12px solid #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.32);
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.fact-block {
+    background: #FFFFFF;
+    border: 1px solid #A38E65;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000000;
+    padding: 8px 0;
+}
+
+.fact-block-title {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 4px;
+}
+
+.fact-block-description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.span-and-title {
+    display: flex;
+    justify-content: center;
+}
+
+.fact-block-line {
+    display: none;
+    width: 4px;
+    height: 29px;
+    margin-right: 8px;
+    background: #A38E65;
+    border: 1px solid #A38E65;
+}
+
+/* end advantages */
+
+/* price-katering-form */
+.price-katering-form {
+    background: url(../img/price-katering-form.bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-backgroun {
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.price-katering-form form {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-katering-form-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 24px;
+    z-index: 2;
+    width: 87.5%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+.price-katering-form-button {
+    max-width: 71.071%;
+    height: 50px;
+    z-index: 2;
+    padding: 9px 24px 11px 24px;
+    background: #FFFFFF;
+    border: 1px solid #A38E65;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-top: 34px;
+    margin-bottom: 40px;
+    color: #333333;
+}
+
+.price-katering-form-input {
+    width: 260px;
+    height: 50px;
+    margin-bottom: 16px;
+    z-index: 2;
+    padding-left: 16px;
+    border: 1px solid #333333;
+    background: #FFFFFF;
+}
+
+.price-katering-form-input::placeholder {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+}
+
+/* end */
+
+/* filters */
+.filters {
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+}
+
+.filters-block {
+    margin-bottom: 24px;
+}
+
+.filters-block-title {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+
+}
+
+.filters-block-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filters-block-content-item {
+    padding: 4px 8px;
+    display: inline-block;
+    border: 1px solid #CBCBCB;
+    background: #ffffff;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 4px 4px 0px;
+}
+
+.filters-item-active {
+    background: #333333;
+    color: #ffffff;
+}
+
+/* end */
+
+/* popup */
+.popup-form {
+    display: none;
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background: #000000;
+    opacity: 0.75;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.popup-form-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    /* height: 500px; */
+    background-color: #fff;
+    z-index: 3;
+}
+
+.popup-form-content form {
+    position: relative;
+    padding-top: 65px;
+}
+
+.form-cross {
+    position: absolute;
+    top: 27px;
+    right: 5px;
+}
+
+.popup-form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+
+}
+
+.popup-input-text {
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 300;
+    height: 50px;
+    padding-left: 16px;
+    width: calc(100% - 18px);
+    margin-bottom: 16px;
+}
+
+.attached-photo-block-title {
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.attached-photo-block-desc {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.attached-photo-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.attached-photo-input+label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    border: 1px solid #CBCBCB;
+    padding: 8px 16px;
+    margin: 8px 0 16px 0;
+}
+
+.radio-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.radio-block div {
+    margin-bottom: 12px;
+}
+.radio-block div input{
+    position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+
+.radio-block div input + label {
+	position: relative;
+    padding: 0 0 0 35px;
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer; 
+}
+
+.radio-block div input + label:before {
+    content: '';
+	position: absolute;
+	top: 2px;
+    left: 0;
+	width: 16px;
+	height: 16px;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+	/* border-radius: 50%; */
+	background: #FFF;
+}
+
+.radio-block div input + label:after {
+    content: '';
+	position: absolute;
+	top: 5px;
+	left: 3px;
+	width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+	/* border-radius: 50%; */
+	background: #333333;
+	/* box-shadow: inset 0 1px 1px rgba(0,0,0,.5); */
+	opacity: 0;
+	transition: .2s;
+}
+.radio-block div input:checked + label:after {
+    opacity: 1;
+}
+
+
+.radio-block label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.radio-block-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.popup-form-submit {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 9px 20px 11px 20px;
+    background: #A38E65;
+    margin: 24px 0  48px 0;
+    /* text-align: center; */
+}
+
+/* end */
+
+
+/* media */
+@media screen and (min-width: 768px) {
+
+    .advantages-list-title {
+        font-size: 40px;
+    }
+
+    .advantages-picture {
+        max-width: 416px;
+        height: 528px;
+        margin: auto;
+        margin-bottom: 75px;
+    }
+
+    .advantages-list-block {
+        padding-bottom: 0;
+        margin-bottom: 56px;
+    }
+
+    /*  */
+
+    .price-katering-form-input {
+        width: 415px;
+    }
+
+    .price-katering-form-title {
+        width: 500px;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    /*  */
+    .filters-block-content-item {
+        padding: 8px 16px;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 8px 8px 0px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        max-width: 91.111%;
+        display: flex;
+    }
+
+    .advantages-list-block {
+        max-width: 68.292%;
+        text-align: left;
+    }
+
+    .advantages-list-title {
+        margin-top: 109px;
+    }
+
+    .advantages-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .advantages-list-card {
+        max-width: 46.428%;
+    }
+
+    .advantages-list :nth-child(odd) {
+        margin-right: 32px;
+    }
+
+    .advantages-list-card :nth-child(n) {
+        margin-right: 0;
+    }
+
+    .advantages-picture-block {
+        width: 100%;
+        position: relative;
+        padding-top: 109px;
+    }
+
+    .advantages-picture {
+        margin: 0;
+        width: 100%;
+    }
+
+    .fact-block {
+        position: absolute;
+        width: 163px;
+        height: 211px;
+        top: 605px;
+        left: 173px;
+        padding: 0 24px;
+    }
+
+    .span-and-title {
+        justify-content: flex-start;
+        margin-top: 26px;
+    }
+
+    .fact-block-line {
+        display: inline-block;
+        margin-bottom: 68px;
+    }
+
+    .fact-block-description {
+        text-align: left;
+    }
+
+    /*  */
+    .filters-block-content {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .filters .container {
+        display: block;
+    }
+    /*  */
+
+    .popup-form-wrapper {
+        width: 640px;
+    }
+
+    .popup-form-content form  {
+        width: 415px;
+    }
+
+    .popup-input-text { 
+        width: calc(415px - 18px);
+    }
+    
+    .form-cross {
+        top: 27px;
+        right: -85px;
+    }
+}
