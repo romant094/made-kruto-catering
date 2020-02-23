@@ -177,10 +177,12 @@
     const $ = selector => document.querySelector(selector);
     $('#popup-open').addEventListener('click', () => {
         $('.popup').style.display = 'flex';
+        $('body').style.overflow = 'hidden';
     });
 
     $('.popup-close').addEventListener('click', () => {
         $('.popup').style.display = 'none';
+        $('body').style.overflow = 'auto';
     })
 </script>
 </body>
