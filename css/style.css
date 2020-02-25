@@ -19,7 +19,7 @@ input[type="submit"] {
     font-family: 'Playfair Display', serif;
 }
 
-input[type=text], input[type=submit], textarea{
+input[type=text], input[type=submit], textarea {
     -webkit-appearance: none;
 }
 
@@ -262,7 +262,7 @@ input[type=text], input[type=submit], textarea{
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
     overflow-y: auto;
-    -webkit-overflow-scrolling:touch;
+    -webkit-overflow-scrolling: touch;
     align-items: center;
     /*display: flex;*/
 }
@@ -435,7 +435,67 @@ input[type=text], input[type=submit], textarea{
     margin: 0 auto;
     display: block;
 }
+
 /* end popup */
+
+/* start summary*/
+.summary {
+    padding: 40px 0;
+}
+
+.summary-keys {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.summary-keys {
+    margin-bottom: 40px;
+    border: 1px solid #A38E65;
+    padding: 40px 35px;
+}
+
+.summary-keys-up .card {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-keys-up .card .card-header {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.summary-keys-up .card .card-description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.summary-keys-down img {
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.summary-keys-down span {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.summary-about p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.summary-about p:first-child {
+    margin-bottom: 25px;
+}
+
+/* end summary*/
 
 @media screen and (min-width: 768px) {
     .container {
@@ -461,7 +521,7 @@ input[type=text], input[type=submit], textarea{
         margin-bottom: 56px;
     }
 
-    .advantages-list-item{
+    .advantages-list-item {
         max-width: 600px;
     }
 
@@ -488,6 +548,29 @@ input[type=text], input[type=submit], textarea{
 
     .popup-submit {
         margin-top: 40px;
+    }
+
+    .summary-keys{
+        padding: 40px 25px;
+    }
+
+    .summary-keys-up{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .summary-keys-down{
+        display: flex;
+        justify-content: center;
+    }
+
+    .summary-keys-down img{
+        margin: 0 4px 0 0;
+    }
+
+    .summary-keys-up .card{
+        flex: 1;
     }
 }
 
@@ -529,6 +612,7 @@ input[type=text], input[type=submit], textarea{
     .advantages-list-item:nth-child(odd) {
         margin-right: 30px;
     }
+
     .advantages-list-item:nth-child(even) {
         margin-right: 0;
     }
@@ -545,7 +629,7 @@ input[type=text], input[type=submit], textarea{
         width: auto;
         max-width: 100%;
         max-height: 100%;
-        align-self:flex-start;
+        align-self: flex-start;
     }
 
     .fact-block {
@@ -561,7 +645,7 @@ input[type=text], input[type=submit], textarea{
         padding: 24px 24px 16px 24px;
     }
 
-    .fact-block h4{
+    .fact-block h4 {
         display: flex;
         align-items: center;
         padding-left: 8px;
@@ -586,10 +670,15 @@ input[type=text], input[type=submit], textarea{
         top: 27px;
         right: -85px;
     }
+
+    .summary-about{
+        max-width: 640px;
+        margin: 0 auto;
+    }
 }
 
-@media screen and (max-device-width: 640px){
-    input, textarea{
+@media screen and (max-device-width: 640px) {
+    input, textarea {
         border-radius: 0;
     }
 }
